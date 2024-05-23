@@ -6,7 +6,7 @@ const MovieModel = dynamodb.define('movie',{
     hashKey:'MovieId',
     timestamps:false,
     schema:{
-        movieId:dynamodb.types.uuid(),
+        MovieId:dynamodb.types.uuid(),
         director:joi.string(),
         release:joi.number(),
         imdb:joi.number()
